@@ -1,0 +1,24 @@
+{
+  "name": "My Project",
+  "authors": [
+    "Maru06 <marix5744@gmail.com>"
+  ],
+  "description": "Bootstrap",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "https://github.com/Maru06/Tarea.git",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.4.1",
+    "fontawesome": "^5.8.2",
+    "hammerjs": "^2.0.8"
+  }
+}

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bower_components/fontawesome/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>My Project</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+        <a class="navbar-brand" href="#">Seytú</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="menu">
+            <div class="navbar-nav mr-auto">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="product.html" class="nav-item nav-link active">| Products</a>
+                <a href="about.html" class="nav-item nav-link">| About Us</a>
+                <a href="contact.html" class="nav-item nav-link">| Contact Us</a>
+            </div>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <div class="container">
+        
+        <div class="row">
+            <div class="col-md-8">
+            <br>
+            <h2>Products. we build amazing stuff.</h2>
+            <p> This is an awesome Product one description</p>
+            </div>
+            <div class="col-md-4 col-12 align-self-center">
+             <button type="button" class="btn btn-primary btn-lg">Buy Now!</button>
+             <button type="button" class="btn btn-secondary btn-lg">Free Trial</button>
+            </div>
+        </div>
+        <hr>
+        <div class="row features">
+            <div class="carousel slide col-12" data-ride="carousel" id="mycarousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#mycarousel" data-slide-to="0"></li>
+                    <li data-target="#mycarousel" data-slide-to="1"></li>
+                    <li data-target="#mycarousel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="img/espuma1.jpg" height="500px" width="1000px" alt="" class="d-block">
+                     <div class="carousel-caption d-none d-md-block">
+                         <h5>First Slide</h5>
+                         
+                     </div> 
+                    </div>
+                            <div class="carousel-item">
+                              <img src="img/espuma2.jpg"  height="500px" width="1100px"alt="" class="d-block">
+                             <div class="carousel-caption d-none d-md-block">
+                                 <h5>Second Slide</h5>
+                                 
+                             </div> 
+                            </div>
+                            <div class="carousel-item">
+                                    <img src="img/espuma3.jpg" height="500px" width="1100px" alt="" class="d-block">
+                                   <div class="carousel-caption d-none d-md-block">
+                                       <h5>Third Slide</h5>
+                                       
+                                   </div> 
+                                  </div>
+                 </div>
+            
+            <a href="#mycarousel" class="carousel-control-prev" data-slide="prev">
+                <i class="fas fa-arrow-circle-left"></i>
+            </a>
+            <a href="#mycarousel" class="carousel-control-next" data-slide="next">
+                    <i class="fas fa-arrow-circle-right"></i>
+                </a>
+
+
+        </div>
+    </div>
+        <div class="row">
+          
+            <div class="col-md-6">
+                <br>
+                <h5>Product	Q&A
+                </h5>
+                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit perspiciatis doloremque excepturi repellendus eos fugit. Beatae expedita placeat et cum voluptas perferendis blanditiis tempore minima!</p>
+            </div>
+            <div class="offset-1 col-md-4 col">
+                <br>
+                <h5>Product	Testimonials
+                </h5>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus delectus in officiis reprehenderit perferendis, adipisci modi earum quibusdam maxime impedit!</p>
+            </div>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <div class="row">
+            <div class="col-md-6" >
+                    <button type="button" class="btn btn-outline-primary"   onclick="location.href='producttwo.html'" ><< Previous Product</button>
+                    
+            </div>
+             <div class="col-md-6 text-right text-right">
+                    <button type="button" class="btn btn-outline-primary" onclick="location.href='producttree.html'">>> Next Product</button>
+            </div>
+    
+            </div>
+    
+       
+    </div>
+    <hr style="width: 88%;">
+    <div class="container">
+            <p class="text-center">Wanna get in touch? Email us at office@awesomeproduct.com.</p>
+        </div>
+        <hr style="width: 88%;">
+        
+        <div class="footer">
+            <div class="container">
+                <ul class="text-center">
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-linkedin"></i>
+                </ul>
+                <p class="text-center">(c) Copyright 2013 Product Name. All rights reserved.</p>
+            </div>
+        </div>
+    
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src ="bower_components/hammerjs/hammer.js"></script>
+    <script>
+            var $body = document.body;
+                   var hammertime = new Hammer($body)
+                   hammertime.get('swipe').set({direction: Hammer.DIRECTION_ALL });
+                   var navElement = document.getElementById("services");
+                   var navElement2 = document.getElementById("menu");
+                   
+                   hammertime.on('swipeleft', function(ev) {
+                   console.log(ev);
+                   navElement.classList.remove("active");
+                   });
+        
+                   hammertime.on('swiperight', function(ev) {
+                   console.log(ev);
+                   navElement.classList.add("active");
+                   });
+        
+                   hammertime.on('swipeup', function(ev) {
+                   console.log(ev);
+                   navElement2.classList.add("collapse");
+                   });
+                   
+                   hammertime.on('swipedown', function(ev) {
+                   console.log(ev);
+                   
+                   navElement2.classList.remove("collapse");
+                   });
+                   </script>
+                   
+</body>
+
+</html>
+

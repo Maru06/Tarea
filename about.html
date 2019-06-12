@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bower_components/fontawesome/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>My Project</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+        <a class="navbar-brand" href="#">Seytú</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="menu">
+            <div class="navbar-nav mr-auto">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="product.html" class="nav-item nav-link active">| Products</a>
+                <a href="about.html" class="nav-item nav-link">| About Us</a>
+                <a href="contact.html" class="nav-item nav-link">| Contact Us</a>
+            </div>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    
+<div class="container">
+    <h2 class= "text-left">About	Us.</h2>
+    <h3 class= "text-left" >Who	we	are</h3>
+    
+    <hr style="width: 100%;">
+    <div class="row">
+        <div class="col-md-8">
+            <h2>The Company</h2>
+                <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea facere aliquam, quisquam aspernatur dicta
+                    beatae illum praesentium mollitia at, voluptate quis quas! Exercitationem quis, facere, quod dolore
+                    architecto velit qui nam veniam nostrum saepe harum error enim omnis aperiam quia eum accusamus sit
+                    eaque. Eaque, quod vero. Placeat, consequuntur dicta.</p>
+            </div>
+            <div class="col-md-4">
+                <br>
+                <button type="button" class="btn btn-outline-secondary btn-lg" style="width: 100%; height: 120px;">Our Motto</button> 
+            </div>
+            <hr style="width: 100%;"> 
+            <div class="container">
+                <div class="row">
+            <div class="col-md-12">
+                <h2>The Team</h2><br><br>
+        </div>
+        <div class="container">
+                <div class="row">
+        <div class="col-md-6">
+                <div class="card" style="width: 30rem;">
+                    <img class="card-img-top" src="img/ni.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Mara Thalía</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora illum itaque iure possimus maxime rerum commodi ullam similique? Perferendis architecto voluptatibus hic sed corrupti odio.</p>
+                    </div>
+                    
+                    <div class="card-body">
+                      <a href="#" class="card-link">Twitter |</a>
+                      <a href="#" class="card-link">Facebook</a>
+                    </div>
+                  </div>
+                </div>
+                  <div class="col-md-6 ">
+                        <div class="card" style="width: 30rem; ">
+                            <img class="card-img-top" src="img/seytt.jpg" alt="Card image cap">
+                            <div class="card-body">
+                              <h5 class="card-title">Kennya Vergara</h5>
+                              <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda esse maiores eaque odit veniam cupiditate. Nostrum ad omnis dolorum inventore veniam ratione possimus beatae facere!</p>
+                            </div>
+                            
+                            <div class="card-body">
+                              <a href="#" class="card-link">Twitter |</a>
+                              <a href="#" class="card-link">Facebook</a>
+                            </div>
+                          </div>
+                        </div>
+            
+                        <hr style="width: 100%;">
+                
+                    
+    
+                    </div>
+                    <p class= "text-center" >Wanna	get	in	touch? Email us at office@awesomeproduct.com.
+                        </p>
+
+                        <br>
+                        <hr style="width: 88%;">
+        
+        <div class="footer">
+            <div class="container">
+                <ul class="text-center">
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-linkedin"></i>
+                </ul>
+                <p class="text-center">(c) Copyright 2013 Product Name. All rights reserved.</p>
+            </div>
+        </div>
+            
+                </div>
+            
+                
+            </div>
+            
+               
+            </div>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/hammerjs/hammer.js"></script>
+<script>
+var $body = document.body;
+       var hammertime = new Hammer($body)
+       hammertime.get('swipe').set({direction: Hammer.DIRECTION_ALL });
+       var navElement = document.getElementById("services");
+       var navElement2 = document.getElementById("menu");
+       
+       hammertime.on('swipeleft', function(ev) {
+       console.log(ev);
+       navElement.classList.remove("active");
+       });
+
+       hammertime.on('swiperight', function(ev) {
+       console.log(ev);
+       navElement.classList.add("active");
+       });
+
+       hammertime.on('swipeup', function(ev) {
+       console.log(ev);
+       navElement2.classList.add("collapse");
+       });
+       
+       hammertime.on('swipedown', function(ev) {
+       console.log(ev);
+       
+       navElement2.classList.remove("collapse");
+       });
+       
+
+       
+
+</script>
+    
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src ="bower_components/hammerjs/hammer.js"></script>
+    <script>
+            var $body = document.body;
+                   var hammertime = new Hammer($body)
+                   hammertime.get('swipe').set({direction: Hammer.DIRECTION_ALL });
+                   var navElement = document.getElementById("services");
+                   var navElement2 = document.getElementById("menu");
+                   
+                   hammertime.on('swipeleft', function(ev) {
+                   console.log(ev);
+                   navElement.classList.remove("active");
+                   });
+        
+                   hammertime.on('swiperight', function(ev) {
+                   console.log(ev);
+                   navElement.classList.add("active");
+                   });
+        
+                   hammertime.on('swipeup', function(ev) {
+                   console.log(ev);
+                   navElement2.classList.add("collapse");
+                   });
+                   
+                   hammertime.on('swipedown', function(ev) {
+                   console.log(ev);
+                   
+                   navElement2.classList.remove("collapse");
+                   });
+                   </script>
+                   
+</body>
+
+</html>
+
